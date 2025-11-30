@@ -49,7 +49,7 @@
 
         Tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <3 1>;
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
@@ -98,6 +98,11 @@
         Backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <13 12>;
+        };
+
+        Shifttab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <3 2 1>;
         };
     };
 
@@ -215,6 +220,15 @@
             require-prior-idle-ms = <150>;
             retro-tap;
         };
+
+        mt3: mod_tap3 {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -222,31 +236,31 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp A  &hmr_l LEFT_GUI S  &hmr_l LEFT_ALT D  &hmr_l_2 LEFT_SHIFT F  &hmr_l_2 LCTRL G  &hmr_r_2 RCTRL H  &hmr_r_2 RIGHT_SHIFT J  &hmr_r RIGHT_ALT K  &hmr_r RIGHT_GUI L  &lt_arrow 3 MINUS  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &lt_scroll 3 M  &kp COMMA  &kp DOT  &kp SLASH  &lt_thumb 1 SPACE  &none  &lt_thumb 2 ENTER  &none
+&kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &mt3 LEFT_SHIFT A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &mt3 RIGHT_SHIFT COLON  &mt3 LCTRL Z  &kp X  &kp C  &kp V  &mt3 LEFT_ALT B  &kp N  &kp M  &kp COMMA  &kp DOT  &mt3 RIGHT_CONTROL MINUS  &lt_thumb 1 SPACE  &lt 3 SPACE  &lt_thumb 2 ENTER  &none
             >;
         };
 
         layer1 {
             bindings = <
-&none  &none  &none  &none  &bootloader  &kp EQUAL  &kp LS(LEFT_BRACKET)  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp LEFT_BRACKET  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp RS(NUMBER_6)  &kp RS(NUMBER_7)  &kp RS(NUMBER_8)  &kp RS(NUMBER_9)  &kp RS(INT1)  &kp SLASH  &kp LS(SINGLE_QUOTE)  &kp MINUS  &kp LS(SEMICOLON)  &none  &kp RS(INT3)  &kp LS(EQUAL)  &kp RS(RIGHT_BRACKET)  &kp RS(BACKSLASH)  &kp INT3  &trans  &trans  &trans  &trans
+&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCL  &none  &bootloader  &trans  &kp PLUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT  &kp AT  &kp SLASH  &kp DOLLAR  &kp ASTRK  &kp CARET  &kp HASH  &kp MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &trans  &kp SEMI  &trans  &kp BACKSLASH  &kp AMPERSAND  &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans  &trans  &trans  &trans
             >;
         };
 
         layer2 {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp NUMBER_1  &hmr_num_l LEFT_GUI NUMBER_2  &hmr_num_l LEFT_ALT NUMBER_3  &hmr_num_l LEFT_SHIFT NUMBER_4  &hmr_num_l LCTRL NUMBER_5  &hmr_num_r RCTRL NUMBER_6  &hmr_num_r RIGHT_SHIFT NUMBER_7  &hmr_num_r RIGHT_ALT NUMBER_8  &hmr_num_r RIGHT_GUI NUMBER_9  &kp NUMBER_0  &kp SLASH  &kp LS(SINGLE_QUOTE)  &kp MINUS  &kp LS(SEMICOLON)  &none  &kp F11  &kp F12  &kp COMMA  &kp DOT  &none  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LEFT_ARROW)  &kp UP_ARROW  &kp LA(RIGHT_ARROW)  &trans  &trans  &trans  &trans  &trans  &trans  &kp ENTER  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mo 4  &trans  &trans  &trans  &trans  &trans  &trans  &kp PG_UP  &kp PAGE_DOWN  &kp HOME  &kp END  &trans  &trans  &trans  &trans
             >;
         };
 
         layer3 {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &kp UP  &none  &bootloader  &mo 4  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none  &none  &none  &none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &kp DELETE  &trans  &trans
+&kp TILDE  &kp F7  &kp F8  &kp F9  &kp F12  &kp N7  &kp N8  &kp N9  &none  &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &kp N4  &kp N5  &kp N6  &trans  &kp COLON  &none  &kp F1  &kp F2  &kp F3  &kp F10  &kp N1  &kp N2  &kp N3  &kp DOT  &kp SLASH  &trans  &none  &kp N0  &trans
             >;
         };
 
         layer4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL  &bt BT_CLR  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bootloader  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL  &bt BT_CLR  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans
             >;
         };
     };
