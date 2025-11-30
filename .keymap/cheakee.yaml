@@ -11,134 +11,134 @@ layers:
   - I
   - O
   - P
-  - A
-  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: G, h: ⌃}
-  - {t: H, h: ⌃}
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '-', h: layer3}
-  - Z
+  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - {t: +, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: Z, h: ⌃}
   - X
   - C
   - V
-  - B
+  - {t: B, h: '$$mdi:apple-keyboard-option$$'}
   - N
-  - {t: M, h: layer3}
+  - M
   - ','
   - .
-  - /
+  - {t: '-', h: RIGHT CONTROL}
   - {t: '$$mdi:keyboard-space$$', h: layer1}
-  - ''
+  - {t: '$$mdi:keyboard-space$$', h: layer3}
   - {t: '$$mdi:keyboard-return$$', h: layer2}
   - ''
   layer1:
-  - ''
-  - ''
-  - ''
+  - ':'
+  - '*'
+  - '!'
   - ''
   - '&bootloader'
-  - ^
-  - '`'
-  - '['
-  - ']'
-  - '@'
-  - '!'
-  - '"'
-  - '#'
-  - $
-  - '%'
-  - '&'
-  - ''''
-  - (
-  - )
-  - _
-  - /
-  - '*'
-  - '-'
-  - +
-  - ''
-  - '|'
+  - {t: ▽, type: trans}
   - '~'
-  - '{'
-  - '}'
-  - ¥
+  - )
+  - Shift+0
+  - '%'
+  - '"'
+  - /
+  - $
+  - (
+  - '&'
+  - '#'
+  - '-'
+  - '@'
+  - '['
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ;
+  - {t: ▽, type: trans}
+  - ']'
+  - ''''
+  - ^
+  - <
+  - '>'
+  - '?'
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   layer2:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - '1'
-  - {t: '2', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '3', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '5', h: ⌃}
-  - {t: '6', h: ⌃}
-  - {t: '7', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '8', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '9', h: '$$mdi:apple-keyboard-command$$'}
-  - '0'
-  - /
-  - '*'
-  - '-'
-  - +
-  - ''
-  - F11
-  - F12
-  - ','
-  - .
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Alt+LEFT ARROW
+  - UP ARROW
+  - Alt+RIGHT ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:keyboard-return$$
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - layer4
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PG UP
+  - PAGE DOWN
+  - HOME
+  - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   layer3:
+  - '~'
+  - F7
+  - F8
+  - F9
+  - F12
+  - '7'
+  - '8'
+  - '9'
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F4
+  - F5
+  - F6
+  - F11
+  - '4'
+  - '5'
+  - '6'
+  - {t: ▽, type: trans}
+  - +
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - $$mdi:chevron-up$$
-  - ''
-  - '&bootloader'
-  - layer4
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-shift$$
-  - ⌃
-  - ''
-  - $$mdi:chevron-left$$
-  - $$mdi:chevron-down$$
-  - $$mdi:chevron-right$$
+  - F1
+  - F2
+  - F3
+  - F10
+  - '1'
+  - '2'
+  - '3'
+  - .
+  - /
+  - {t: ▽, type: trans}
   - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '4'}
-  - {t: '$$mdi:bluetooth-connect$$', h: '5'}
-  - {t: ▽, type: trans}
-  - $$mdi:backspace-reverse$$
-  - {t: ▽, type: trans}
+  - '0'
   - {t: ▽, type: trans}
   layer4:
   - {t: ▽, type: trans}
@@ -151,29 +151,29 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '4'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '5'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&bootloader'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
 - p: [21, 22]
@@ -193,7 +193,7 @@ combos:
   l: [default]
   a: top
   o: 0.15
-- p: [11, 12]
+- p: [3, 1]
   k: Tab
   l: [default]
 - p: [13, 16]
@@ -216,3 +216,5 @@ combos:
   l: [default]
 - p: [13, 12]
   k: $$mdi:backspace$$
+- p: [3, 2, 1]
+  k: Sft+Tab
