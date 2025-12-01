@@ -236,13 +236,13 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &mt3 LEFT_SHIFT A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &mt3 RIGHT_SHIFT COLON  &mt3 LCTRL Z  &kp X  &kp C  &kp V  &mt3 LEFT_ALT B  &kp N  &kp M  &kp COMMA  &kp DOT  &mt3 RIGHT_CONTROL MINUS  &lt_thumb 1 SPACE  &lt 3 SPACE  &lt_thumb 2 ENTER  &none
+&kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &mt3 LEFT_SHIFT A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &mt3 RIGHT_SHIFT COLON  &mt3 LCTRL Z  &mt3 LEFT_WIN X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &mt3 LEFT_ALT DOT  &mt3 RIGHT_CONTROL MINUS  &lt_thumb 1 SPACE  &lt 3 SPACE  &lt_thumb 2 ENTER  &none
             >;
         };
 
         layer1 {
             bindings = <
-&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCL  &none  &bootloader  &trans  &kp PLUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT  &kp AT  &kp SLASH  &kp DOLLAR  &kp ASTRK  &kp CARET  &kp HASH  &kp MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &trans  &kp SEMI  &trans  &kp BACKSLASH  &kp AMPERSAND  &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans  &trans  &trans  &trans
+&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCL  &none  &bootloader  &trans  &kp PLUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT  &kp AT  &kp SLASH  &kp DOLLAR  &kp ASTRK  &kp CARET  &kp HASH  &kp MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &trans  &kp SEMI  &trans  &kp BACKSLASH  &kp AMPERSAND  &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans  &trans  &kp DELETE  &trans
             >;
         };
 
