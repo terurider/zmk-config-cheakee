@@ -22,14 +22,14 @@ layers:
   - L
   - {t: +, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: Z, h: ⌃}
-  - X
+  - {t: X, h: LEFT WIN}
   - C
   - V
-  - {t: B, h: '$$mdi:apple-keyboard-option$$'}
+  - B
   - N
   - M
   - ','
-  - .
+  - {t: ., h: '$$mdi:apple-keyboard-option$$'}
   - {t: '-', h: RIGHT CONTROL}
   - {t: '$$mdi:keyboard-space$$', h: layer1}
   - {t: '$$mdi:keyboard-space$$', h: layer3}
@@ -68,7 +68,7 @@ layers:
   - '?'
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - $$mdi:backspace-reverse$$
   - {t: ▽, type: trans}
   layer2:
   - {t: ▽, type: trans}
