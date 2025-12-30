@@ -19,4 +19,4 @@
 #
 ---
 board: ["seeeduino_xiao_ble"]
-shield: ["cheakee_left_no_ball", "cheakee_right_ball_R"]
+shield: ["cheakee_left", "cheakee_right_ball_R"]
